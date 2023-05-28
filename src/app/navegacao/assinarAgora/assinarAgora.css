@@ -91,6 +91,7 @@ body {
 .banner button {
     background-color: white;
     padding: 15px 150px;
+    margin-top: 25px;
     font-size: 25px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     text-decoration: none;
@@ -101,7 +102,7 @@ body {
 }
 
 button:hover {
-    background-color: black;
+    background-color: green;
     color: white;
     border: 10px white;
     transition: 0.2s;

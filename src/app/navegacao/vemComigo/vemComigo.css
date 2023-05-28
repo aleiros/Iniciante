@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: grey;
+    background-color: black;
 }
 
 .container {
@@ -17,10 +17,10 @@ body {
 .menu {
     align-items: center;
     justify-content: center;
-    padding: 8px 35px;
+    padding: 10px 35px;
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(15px);
     position: fixed;
 }
@@ -67,8 +67,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     padding-left: 25%;
-    padding: 100px;
-    padding-top: 170px;
+    padding: 80px;
+    padding-top: 120px;
     width: 100;
     height: calc(100vh - 100px);
     text-align: center;
@@ -80,7 +80,8 @@ body {
 
 .banner h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
+    padding: 10px;
     color: white;
 }
 
@@ -106,7 +107,7 @@ body {
 }
 
 button:hover {
-    background-color: black;
+    background-color: green;
     color: white;
     border: 10px white;
     transition: 0.2s;
@@ -121,7 +122,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-color: rgb(0, 33, 0);
+    background-color: rgba(0, 23, 0, 0.5);
 }
 
 .new-home-v4-footer ul {
@@ -159,7 +160,7 @@ button:hover {
 
 .new-home-v4-footer li a:hover {
     transition: 0.2s;
-    transform: scale(1.1);
+    transform: scale(1.2);
     color: black;
 }
 
@@ -173,18 +174,6 @@ button:hover {
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .banner_text_video {
-        text-align: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .youtube_video {
-        font-size: 10px;
-        text-align: 10px;
-    }
 
     .icones {
         margin: auto;
@@ -210,12 +199,11 @@ button:hover {
 
 /* CELULAR */
 @media screen and (min-width: 250px) and (max-width: 900px) {
-    .banner_text_video {
-        text-align: center;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
+
+    .banner {
+        background-image: url(/assets/img/celular250x900.jpg);
+        background-position: center;
+        background-attachment: fixed;
     }
 
     .banner h1 {
@@ -225,11 +213,6 @@ button:hover {
     .banner button {
         font-size: 20px;
         padding: 10px 80px;
-    }
-
-    .youtube_video {
-        font-size: 20px;
-        text-align: 10px;
     }
 
     .Apps_image img {
